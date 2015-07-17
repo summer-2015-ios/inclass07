@@ -1,5 +1,5 @@
 //
-//  EventViewController.h
+//  AddEventViewController.h
 //  InClass07
 //
 //  Created by student on 7/16/15.
@@ -7,8 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <Parse/PFObject.h>
 
-@interface EventViewController : UIViewController
-@property PFObject* event;
+@interface AddEventViewController : UIViewController
+
 @end

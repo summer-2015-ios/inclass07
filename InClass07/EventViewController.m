@@ -7,6 +7,7 @@
 //
 
 #import "EventViewController.h"
+#import <Parse/PFObject.h>
 
 @interface EventViewController ()
 

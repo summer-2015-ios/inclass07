@@ -17,6 +17,7 @@
 		3FF4AC1A1B5863A3001BF6D0 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FF4AC191B5863A3001BF6D0 /* SignUpViewController.m */; };
 		3FF4AC1D1B586714001BF6D0 /* EventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FF4AC1C1B586714001BF6D0 /* EventsViewController.m */; };
 		3FF4AC201B587414001BF6D0 /* EventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FF4AC1F1B587414001BF6D0 /* EventViewController.m */; };
+		3FF4AC231B58799D001BF6D0 /* AddEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FF4AC221B58799D001BF6D0 /* AddEventViewController.m */; };
 		7DA8BFB5D27990317D50578A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE6830BB8B1EAEA59FD63B00 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,8 @@
 		3FF4AC1C1B586714001BF6D0 /* EventsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventsViewController.m; sourceTree = "<group>"; };
 		3FF4AC1E1B587414001BF6D0 /* EventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventViewController.h; sourceTree = "<group>"; };
 		3FF4AC1F1B587414001BF6D0 /* EventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventViewController.m; sourceTree = "<group>"; };
+		3FF4AC211B58799D001BF6D0 /* AddEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddEventViewController.h; sourceTree = "<group>"; };
+		3FF4AC221B58799D001BF6D0 /* AddEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddEventViewController.m; sourceTree = "<group>"; };
 		D298A4BC6E278E8D5F19710D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		EE6830BB8B1EAEA59FD63B00 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -114,6 +117,8 @@
 				3FF4AC191B5863A3001BF6D0 /* SignUpViewController.m */,
 				3FF4AC1B1B586714001BF6D0 /* EventsViewController.h */,
 				3FF4AC1C1B586714001BF6D0 /* EventsViewController.m */,
+				3FF4AC211B58799D001BF6D0 /* AddEventViewController.h */,
+				3FF4AC221B58799D001BF6D0 /* AddEventViewController.m */,
 				3FF4AC1E1B587414001BF6D0 /* EventViewController.h */,
 				3FF4AC1F1B587414001BF6D0 /* EventViewController.m */,
 				3FF4ABFF1B585FEE001BF6D0 /* Images.xcassets */,
@@ -294,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FF4ABFB1B585FEE001BF6D0 /* ViewController.m in Sources */,
+				3FF4AC231B58799D001BF6D0 /* AddEventViewController.m in Sources */,
 				3FF4AC1D1B586714001BF6D0 /* EventsViewController.m in Sources */,
 				3FF4ABF81B585FEE001BF6D0 /* AppDelegate.m in Sources */,
 				3FF4AC201B587414001BF6D0 /* EventViewController.m in Sources */,
