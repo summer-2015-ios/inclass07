@@ -45,7 +45,7 @@
     NSString* eLocation = self.eLocationTV.text;
     NSString* eDate = self.eDateTV.text;
     NSString* eDescr = self.eDescrTV.text;
-    if(!eName || !eLocation || !eDate || !eDescr){
+    if([eName length] ==0 || [eLocation length] ==0|| [eDate length] ==0  || [eDescr length]==0){
         UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Missing Field"
                                                                        message:@"All field are mandatory!"
                                                                 preferredStyle:UIAlertControllerStyleAlert];

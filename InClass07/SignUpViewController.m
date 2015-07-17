@@ -31,7 +31,34 @@
 }
 - (IBAction)submitBtnClicked:(id)sender {
     // error checks here
-    
+    if(self.passwordTV.text && ![self.passwordTV.text isEqualToString:self.confirmPasswordTV.text]){
+        
+            UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Sign Up Error"
+                                                                           message:@"Passwords do not match"
+                                                                    preferredStyle:UIAlertControllerStyleAlert];
+            
+            UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                                  handler:^(UIAlertAction * action) {}];
+            
+            [alert addAction:defaultAction];
+            [self presentViewController:alert animated:YES completion:nil];
+            return;
+
+    }
+    if([self.emailTV.text length] ==0  || [self.passwordTV.text length]== 0 || [self.emailTV.text length] ==0 || [self.firstNameTV.text length] ==0 || [self.lastNameTV.text length] ==0 ){
+        
+        UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Sign Up Error"
+                                                                       message:@"All are mandatory fields"
+                                                                preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                              handler:^(UIAlertAction * action) {}];
+        
+        [alert addAction:defaultAction];
+        [self presentViewController:alert animated:YES completion:nil];
+        return;
+
+    }
     
     PFUser* user = [PFUser user];
     user.username = self.emailTV.text;

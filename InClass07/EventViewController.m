@@ -33,14 +33,27 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)deleteBtnClicked:(id)sender {
-    [self.event deleteInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-        if(error){
-            NSLog(@"error while deleting event");
-            return ;
-        }
-        [self.navigationController popViewControllerAnimated:YES];
-    }];
-}
+    UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Event Delete"
+                                                                   message:@"Do you want to delete this event?"
+                                                            preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction* okAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                          handler:^(UIAlertAction * action) {
+                                                              [self.event deleteInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+                                                                  if(error){
+                                                                      NSLog(@"error while deleting event");
+                                                                      return ;
+                                                                  }
+                                                                  [self.navigationController popViewControllerAnimated:YES];
+                                                              }];
+
+                                                          }];
+    UIAlertAction* cancelAction = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleDefault
+                                                         handler:^(UIAlertAction * action) {}];
+    [alert addAction:okAction];
+    [alert addAction:cancelAction];
+    [self presentViewController:alert animated:YES completion:nil];
+   }
 
 /*
 #pragma mark - Navigation
