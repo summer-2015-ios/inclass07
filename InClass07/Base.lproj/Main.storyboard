@@ -320,8 +320,18 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Event" id="shf-tz-D5K">
-                        <barButtonItem key="rightBarButtonItem" systemItem="trash" id="aD6-ER-75N"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="trash" id="aD6-ER-75N">
+                            <connections>
+                                <action selector="deleteBtnClicked:" destination="7mc-Hh-TCe" id="MDc-Jt-nyd"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="eDateLabel" destination="fpi-c4-2Nl" id="tKH-gU-JLy"/>
+                        <outlet property="eDescrLabel" destination="iZ0-ci-eT9" id="aVc-AY-Z9y"/>
+                        <outlet property="eLocationLabel" destination="shh-2L-SSW" id="bPY-M1-vUb"/>
+                        <outlet property="eNameLabel" destination="tIX-Re-IdP" id="aLj-SU-5bE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HBI-nh-dua" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -37,7 +37,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self fetchEvents];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -92,6 +92,9 @@
 }
 -(IBAction) backFromEventAddBySubmit:(UIStoryboardSegue* ) segue{
     NSLog(@"Back from add event by submit");
+    [self fetchEvents];
+}
+-(void)viewDidAppear:(BOOL)animated{
     [self fetchEvents];
 }
 @end
