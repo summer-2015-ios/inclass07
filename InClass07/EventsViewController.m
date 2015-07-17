@@ -92,7 +92,7 @@
 }
 -(IBAction) backFromEventAddBySubmit:(UIStoryboardSegue* ) segue{
     NSLog(@"Back from add event by submit");
-    [self fetchEvents];
+   // [self fetchEvents];
 }
 -(void)viewDidAppear:(BOOL)animated{
     [self fetchEvents];
